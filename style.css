@@ -1,10 +1,129 @@
-body{
+*{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
 
 }
-.nav-item{
-    display: inline;
+header{
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    margin: auto;
+    align-items: center;
+    background-color:  rgb(255, 182, 193);
+    
 }
-.d-flex{
-    padding: 5px 10px;
+.logo-container,.nav-links,.cart{
+    display: flex;
 }
+.logo-container{
+    padding-left: 50px;
+    flex: 1;
+}
+.logo{
+    font-weight: 400;
+    margin: 15px;
+}
+.nav-links{
+    justify-content: space-around;
+    list-style: none;
+    color: #5f5f79;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+nav{
+    flex: 2;
+   
+}
+.cart{
+    flex: 1;
+    justify-content: end;
+    padding-right: 50px;
+}
+.presentation{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+}
+.introduction{
+    
+    flex: 1;
+}
+.cover{
+    flex: 1;
+    
+}
+.intro-text h1{
+    font-size: 44px;
+    font-weight: 500;
+    background: linear-gradient(to right,#494964,#6f6f89);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.intro-text p{
+    margin-top: 5px;
+    font-size: 22px;
+    color: #585770;
+}
+.cta{
+    padding: 50px 0px 0px 0px;
+    
+}
+.cta-select{
+    border: 3px solid #c36cbb;
+    background: transparent;
+    color: #c36cbb;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 15px;
+}
+.cta-add{
+    background: #c36cbb;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+    color: whitesmoke;
+    margin: 30px 0px 0px 30px;
+    border-radius: 15px;
+}
+
+.cover img{
+    height: 68vh;
+    filter: drop-shadow(0px 7px 5px rgb(0, 0, 0));
+}
+.back{
+    margin-top: 0px;
+    background-color: rgb(255, 182, 193);
+}
+  @media screen and (max-width: 1024px){
+    .presentation{
+        flex-direction: column;
+    }
+    .introduction{
+        margin-top: 5vh;
+        text-align: center;
+    }
+    .intro-text h1{
+        font-size: 30px;
+    }
+    .intro-text p{
+        font-size: 18px;
+    }
+    .cat{
+        padding: 10px 0px 0px 0px;
+    }
+    .nav-links{
+        border: 5%;
+    }
+  }
+      
+  
